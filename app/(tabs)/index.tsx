@@ -137,10 +137,7 @@ function HeroBannerCarousel({
       ]}
     >
       <View style={heroStyles.cardCopy}>
-        <View style={heroStyles.livePill}>
-          <View style={heroStyles.liveDot} />
-          <Text style={heroStyles.liveText}>LIVE</Text>
-        </View>
+        
         <Text style={heroStyles.cardTitle}>{banner.title}</Text>
         <Text style={heroStyles.cardSub}>{banner.sub}</Text>
         <AnimatedPressable
@@ -230,28 +227,8 @@ const heroStyles = StyleSheet.create({
     justifyContent: "center",
     gap: 8,
   },
-  livePill: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 5,
-    backgroundColor: "rgba(255,255,255,0.18)",
-    alignSelf: "flex-start",
-    borderRadius: 999,
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-  },
-  liveDot: {
-    width: 6,
-    height: 6,
-    borderRadius: 3,
-    backgroundColor: "#FFFFFF",
-  },
-  liveText: {
-    color: "#FFFFFF",
-    fontSize: 10,
-    fontWeight: "900",
-    letterSpacing: 1.2,
-  },
+ 
+ 
   cardTitle: {
     color: "#FFFFFF",
     fontSize: 24,
